@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# Q1. What are the two latest user-defined exception constraints in Python 3.X?
+# 
+
+# September 2021, there are no specific constraints or limitations on user-defined exceptions in Python 3.x. You can create custom exceptions by creating classes that inherit from the built-in Exception class or its subclasses. Python allows flexibility in defining the structure and behavior of user-defined exceptions, enabling you to create exceptions tailored to your application's requirements. It is recommended to follow conventions and best practices, such as providing informative error messages and documenting their usage. For the latest information, referring to the official Python documentation and trusted resources is advisable.
+
+# Q2. How are class-based exceptions that have been raised matched to handlers?
+# 
+
+# class-based exceptions that have been raised are matched to handlers based on their type or inheritance hierarchy. When an exception is raised in Python, the interpreter starts searching for an appropriate exception handler that can handle that specific type of exception.
+# 
+# The search begins with the most recently raised exception and proceeds up the call stack until an appropriate except block is found. The except block specifies the type of exception it can handle. If the raised exception is an instance of that type or inherits from it, the corresponding except block is executed.
+# 
+# when a class-based exception is raised, Python matches it to the appropriate handler by checking the type hierarchy and executing the first matching except block encountered during the search.
+
+# Q3. Describe two methods for attaching context information to exception artefacts.
+# 
+
+# Exception Arguments: When raising an exception, you can include additional information in the form of arguments. By passing relevant values to the exception class constructor, you can attach specific context information to the exception instance.
+# 
+# Custom Exception Attributes: Another method is to define custom attributes within your exception class to hold additional context information. By creating specific attributes and setting their values during exception initialization, you can attach relevant context details. 
+
+# Q4. Describe two methods for specifying the text of an exception object's error message.
+# 
+
+# Exception Class Initialization: One way to specify the error message of an exception object is by passing it as an argument during the initialization of the exception class. You can define a custom exception class and override the __init__() method to accept an error message argument.
+#     
+# Formatting Error Message: Another method is to format the error message dynamically using string formatting techniques. You can use string interpolation or the format() method to insert variables or values into the error message
+
+# Q5. Why do you no longer use string-based exceptions?
+# 
+
+#  string-based exceptions are no longer recommended because they lack specificity, have limited handling options, do not support inheritance and hierarchy, and can lead to decreased code readability and maintainability. Exception classes provide a more structured, flexible, and expressive way to handle errors in Python code.
+
+# In[ ]:
+
+
+
+
